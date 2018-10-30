@@ -43,7 +43,7 @@
               <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
               <Component id="jSlider1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="93" max="32767" attributes="0"/>
+              <EmptySpace pref="88" max="32767" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -81,6 +81,13 @@
       </AuxValues>
     </Component>
     <Component class="javax.swing.JSlider" name="jSlider1">
+      <Properties>
+        <Property name="minorTickSpacing" type="int" value="10"/>
+        <Property name="paintLabels" type="boolean" value="true"/>
+        <Property name="paintTicks" type="boolean" value="true"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="value" type="int" value="0"/>
+      </Properties>
       <Events>
         <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jSlider1AncestorAdded"/>
       </Events>

@@ -45,6 +45,11 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        jSlider1.setMinorTickSpacing(10);
+        jSlider1.setPaintLabels(true);
+        jSlider1.setPaintTicks(true);
+        jSlider1.setToolTipText("");
+        jSlider1.setValue(0);
         jSlider1.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
@@ -82,7 +87,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71)
                 .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
@@ -96,18 +101,13 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
-        int value = (int) jComboBox1.getSelectedItem();
-        //jSlider1.addChangeListener(ChangeEvent value);
-        for (int i =0; i<100; i++){
-            int value2 = jSlider1.getValue();
-            if (value2 == value){
-                jSlider1.setMinorTickSpacing(value);
-            }
-        }
+        String value = (String) jComboBox1.getSelectedItem();
+        jSlider1.setValue(Integer.valueOf(value));        
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jSlider1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jSlider1AncestorAdded
         // TODO add your handling code here:
+        jSlider1.setPaintTicks(true);
     }//GEN-LAST:event_jSlider1AncestorAdded
 
     /**
