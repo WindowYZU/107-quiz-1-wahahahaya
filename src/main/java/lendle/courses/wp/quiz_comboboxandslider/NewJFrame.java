@@ -97,7 +97,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
         int value = (int) jComboBox1.getSelectedItem();
-        //jSlider1.addChangeListener(value);
+        //jSlider1.addChangeListener(ChangeEvent value);
         for (int i =0; i<100; i++){
             int value2 = jSlider1.getValue();
             if (value2 == value){
